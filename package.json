@@ -20,6 +20,11 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-react-easy": "^0.1.9",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "dependencies": {
+    "material-ui": "^0.20.0"
   }
 }
