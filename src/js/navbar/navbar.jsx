@@ -1,28 +1,20 @@
 import React from 'react';
+import NavBar from './nav-menu'
 
-class NavBar extends React.Component {
+class NavMenu extends React.Component {
     render() {
         let corNav = "nav-wrapper ".concat(this.props.cor);
-        let menus = [
+        let menu = [
             { titulo: "Home", link: "#home" },
             { titulo: "Sobre", link: "#sobre" },
             { titulo: "Contato", link: "#contato" }
         ];
-        let lista = menus.map((menu)=>{
-            return (
-                <li key={menu.titulo}>
-                    <a href={menu.link}>{menu.titulo}</a>
-                </li>
-            );
-        });
         return (
             <nav>
                 <div className={corNav}>
                     <div className="container">
                         <a href="#" className="brand-logo">{this.props.titulo}</a>
-                        <ul id="nav-mobile" className="right">
-                            {lista}
-                        </ul>
+                        <NavBar menu={menu}/>
                     </div>
                 </div>
             </nav>
@@ -30,4 +22,4 @@ class NavBar extends React.Component {
     }
 }
 
-export default NavBar;
+export default NavMenu;
